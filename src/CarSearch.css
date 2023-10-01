@@ -1,0 +1,37 @@
+/* CarSearch.css */
+
+.CarSearch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 25%;
+  
+    /* Style the search input */
+    .MuiInput-root {
+      flex: 1;
+    }
+  
+    /* Style the dropdown selects */
+    .MuiFormControl-root {
+      min-width: 120px;
+    }
+  
+    /* Style the filled selects */
+    .MuiFilledInput-root {
+      background-color: transparent;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    /* Style the select icons */
+    .MuiSelect-icon {
+      color: #333;
+    }
+    
+    /* Style the default selections */
+    .MuiSelect-select {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+  
