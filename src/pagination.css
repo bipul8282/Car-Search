@@ -1,0 +1,42 @@
+.Pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 800px;
+  }
+  
+  .Pagination button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px; /* Border radius */
+    cursor: pointer;
+  }
+  
+  .Pagination button.active {
+    background-color: #007bff; /* Active button color */
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .Pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #d0d4da;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px; 
+    margin-left: 50px;
+   margin-right: 50px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  

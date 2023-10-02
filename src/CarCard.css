@@ -1,0 +1,65 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:white;
+    background-color: #eef2f7; 
+  }
+  
+  .CarCard {
+    background-color:white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    /* width: calc(33.33% - 16px);  */
+    width: calc(29.33% - 16px); 
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 50px;
+   
+   
+  }
+ 
+  
+  .BlueIcon + .BlueIcon {
+    margin-left: 100px; 
+  }
+  
+  .ButtonLabel {
+    border: 2px dotted #007BFF; /* Dotted blue border */
+    padding: 5px 10px; /* Padding around the text */
+    border-radius: 40px; /* Rounded corners */
+    cursor: pointer;
+    margin-left: 70px;
+  
+  }
+  /* CarCard.css */
+  
+  /* ... (previous styles) */
+  
+  .RentButton {
+    background-color: #0077b6; /* Updated to a good blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+    border-radius: 25px;
+  }
+  
+  .RentButton:hover {
+    background-color: #005b8e; /* Darker shade on hover for visual feedback */
+  }
+  
+  .BlueFavoriteIcon {
+    color: skyblue; 
+    margin-left: 70px;
+    background-color: rgb(209, 231, 231);
+    border-radius: 5px;/* Change the color to blue */
+  }
+  
+  
