@@ -11,7 +11,6 @@ function CarCard({ car }) {
   const commonBoxClass = "CommonBox"; 
   const blueButtonClass = "BlueButton"; 
 
-
   const blueIconStyle = {
     color: 'skyblue',
   };
@@ -25,9 +24,10 @@ function CarCard({ car }) {
         </h2>
       </div>
       <p>
+        <PeopleIcon className={commonIconClass} style={{ ...blueIconStyle, marginRight: '5px' }} />
         {car.brand.includes('4 People') && (
           <>
-            <PeopleIcon className={commonIconClass} style={blueIconStyle} /> {car.brand.split('4 People')[0]} 4 people
+            {car.brand.split('4 People')[0]} 4 people
             <LocalGasStationIcon className={commonIconClass} style={blueIconStyle} /> {car.brand.split('4 People')[1]} Hybrid
           </>
         )}
@@ -42,14 +42,12 @@ function CarCard({ car }) {
 
       <hr className={`Divider ${commonBoxClass}`} />
       <div>
-        
         <h1>
           {car.price}
           <FavoriteBorderIcon className={`${commonIconClass} BlueFavoriteIcon`} />
           <button className={`RentButton ${commonBoxClass} ${blueButtonClass}`}>Rent now</button>
         </h1>
       </div>
-      
     </div>
   );
 }
