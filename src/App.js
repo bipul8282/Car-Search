@@ -17,12 +17,12 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const carsPerPage = 6;
 
-  // Filter cars based on the search term
+ 
   const filteredCars = cars.filter(car =>
     car.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // Pagination logic
+ 
   const indexOfLastCar = currentPage * carsPerPage;
   const indexOfFirstCar = indexOfLastCar - carsPerPage;
   const currentCars = filteredCars.slice(indexOfFirstCar, indexOfLastCar);

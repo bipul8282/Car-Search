@@ -23,15 +23,15 @@ body {
 }
 
 .ButtonLabel {
-  border: 2px dotted #007BFF; /* Dotted blue border */
-  padding: 5px 10px; /* Padding around the text */
-  border-radius: 40px; /* Rounded corners */
+  border: 2px dotted #007BFF;
+  padding: 5px 10px; 
+  border-radius: 40px; 
   cursor: pointer;
   margin-left: 70px;
 }
 
 .RentButton {
-  background-color: #0077b6; /* Updated to a good blue color */
+  background-color: #0077b6; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -42,15 +42,15 @@ body {
   border-radius: 25px;
 }
 
-.RentButton:hover {
-  background-color: #005b8e; /* Darker shade on hover for visual feedback */
+.RentButton:hover { 
+  background-color: #005b8e;
 }
 
 .BlueFavoriteIcon {
   color: skyblue; 
   margin-left: 70px;
   background-color: rgb(209, 231, 231);
-  border-radius: 5px;/* Change the color to blue */
+  border-radius: 5px;
 }
 
 h1{

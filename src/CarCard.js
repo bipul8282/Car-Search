@@ -1,17 +1,17 @@
 import React from 'react';
 import PeopleIcon from '@mui/icons-material/People';
-import LocalGasStationIcon from '@mui/icons-material/LocalGasStation'; // Updated icon import
+import LocalGasStationIcon from '@mui/icons-material/LocalGasStation'; 
 import SpeedIcon from '@mui/icons-material/Speed';
 import MotionPhotosAutoIcon from '@mui/icons-material/MotionPhotosAuto';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import './CarCard.css';
 
 function CarCard({ car }) {
-  const commonIconClass = "BlueIcon"; // Common class for all icons
-  const commonBoxClass = "CommonBox"; // Common class for all boxes
-  const blueButtonClass = "BlueButton"; // Class for blue button background
+  const commonIconClass = "BlueIcon"; 
+  const commonBoxClass = "CommonBox"; 
+  const blueButtonClass = "BlueButton"; 
 
-  // CSS style for blue icons
+
   const blueIconStyle = {
     color: 'skyblue',
   };
@@ -42,15 +42,14 @@ function CarCard({ car }) {
 
       <hr className={`Divider ${commonBoxClass}`} />
       <div>
-        {/* Display the price */}
+        
         <h1>
           {car.price}
           <FavoriteBorderIcon className={`${commonIconClass} BlueFavoriteIcon`} />
           <button className={`RentButton ${commonBoxClass} ${blueButtonClass}`}>Rent now</button>
         </h1>
       </div>
-      {/* Add Pagination component */}
-      {/* ... */}
+      
     </div>
   );
 }

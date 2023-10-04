@@ -23,7 +23,7 @@ function Pagination({ currentPage, totalPages, setCurrentPage }) {
   return (
     <div className="Pagination">
       <button
-        onClick={handlePreviousClick} // Updated onClick handler
+        onClick={handlePreviousClick} 
         disabled={currentPage === 1}
       >
         Previous
@@ -38,7 +38,7 @@ function Pagination({ currentPage, totalPages, setCurrentPage }) {
         </button>
       ))}
       <button
-        onClick={handleNextClick} // Updated onClick handler
+        onClick={handleNextClick} 
         disabled={currentPage === totalPages}
       >
         Next
@@ -50,19 +50,18 @@ function Pagination({ currentPage, totalPages, setCurrentPage }) {
 function Footer({ currentPage, totalPages, setCurrentPage }) {
   return (
     <div className="footer">
-      {/* Pagination component placed inside the Footer */}
+     
       <Pagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} />
     </div>
   );
 }
 
 export default function App() {
-  const [currentPage, setCurrentPage] = React.useState(1); // Use React.useState for state management
+  const [currentPage, setCurrentPage] = React.useState(1); 
   const totalPages = 10;
 
   return (
     <div className="App">
-      {/* Footer component with Pagination and additional content */}
       <Footer currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} />
     </div>
   );
